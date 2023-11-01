@@ -146,7 +146,7 @@ const appt_header = document.getElementById('container');
 btn_appointment.addEventListener('click', event => {
   show_appointment();
   //setTimeout(() => {
-  //  window.scrollTo(0, 870);
+  window.scrollTo(0, 870);
   //}, 2000);
 });
 
