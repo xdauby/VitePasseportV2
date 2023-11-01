@@ -1,7 +1,6 @@
 
 async function show_appointment() {
   try {
-    console.log('ok')
     const value = await get_appointments();
 
         const mainContainer = document.getElementById('appt-list');
@@ -72,6 +71,7 @@ async function show_appointment() {
 
           mainContainer.appendChild(li);
         }
+        window.scrollTo(0, 870);
 
   } catch (err) {
     const mute = err;
@@ -145,9 +145,6 @@ const btn_appointment = document.getElementById('appointment-btn');
 const appt_header = document.getElementById('container');
 btn_appointment.addEventListener('click', event => {
   show_appointment();
-  //setTimeout(() => {
-  window.scrollTo(0, 870);
-  //}, 2000);
 });
 
 
